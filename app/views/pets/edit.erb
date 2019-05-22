@@ -4,7 +4,7 @@
   <input type="hidden" id="hidden" name="_method" value="patch">
   <input type="text" name="pet[name]" id="pet_name" value="<%=@pet.name%>">
   <% @owners.each do |owner| %>
-    <input type="checkbox" name="pet[owner_id]" value="<%=owner.id%>" id="<%=owner.id%>" <% if @pet.owner_id == owner.id %>checked<%end%>>
+    <input type="checkbox" name="pet[owner_id]" value="<%=owner.id%>" id="<%=owner.id%>" <% if @pet.owner_id == owner.id %>checked<%end%>><%=owner.name%>
   <% end %>
   <input type="submit" value="submit">
 </form>
