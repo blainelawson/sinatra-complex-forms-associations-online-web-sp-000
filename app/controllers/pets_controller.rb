@@ -41,7 +41,7 @@ class PetsController < ApplicationController
     else
       @pet.owner = Owner.find_by_id(params[:pet][:owner_id])
     end
-
+binding.pry
     @pet.save
     redirect to "pets/#{@pet.id}"
   end
