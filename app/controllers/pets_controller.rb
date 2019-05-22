@@ -26,7 +26,7 @@ class PetsController < ApplicationController
   end
 
   get '/pets/:id/edit' do
-    erb :"/pets/#{params[:id]}/edit"
+    erb :"/pets/edit"
   end
 
   patch '/pets/:id' do
