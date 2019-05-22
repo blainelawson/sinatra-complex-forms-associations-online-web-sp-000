@@ -28,6 +28,7 @@ class PetsController < ApplicationController
   get '/pets/:id/edit' do
     @owners = Owner.all
     @pet = Pet.find_by_id(params[:id])
+    binding.pry
     erb :"/pets/edit"
   end
 
