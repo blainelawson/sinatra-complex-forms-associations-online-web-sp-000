@@ -26,7 +26,6 @@ class PetsController < ApplicationController
   end
 
   get '/pets/:id/edit' do
-    binding.pry
     erb :"/pets/#{params[:id]}/edit"
   end
 
